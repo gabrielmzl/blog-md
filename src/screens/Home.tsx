@@ -10,7 +10,7 @@ export const HomeScreen = async () => {
     <div className="grid w-full flex flex-col mt-4">
       {
         posts.map(post =>
-          <Article post={post} />
+          <Article key={post.slug} post={post} />
         )
       }
     </div>
