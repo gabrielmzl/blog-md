@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-gray-50;
+  -webkit-font-smoothing: antaliased;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(/noise.png);
+  opacity: .75;
+  z-index: 100;
+  pointer-events: none;
+}
